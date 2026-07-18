@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawit Tycoon 2045 - Klaim Kode</title>
+    <!-- Hubungkan ke file CSS yang akan kita buat di Tahap 2 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google untuk tampilan futuristik -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Header Atas -->
+        <div class="game-header">
+            <button class="btn-back">← KEMBALI</button>
+            <div class="eco-score">🌿 Eco-Score: <span id="eco-val">95</span></div>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="main-content">
+            <h1 class="game-title">🌴 SAWIT TYCOON 2045 🌴</h1>
+            <p class="game-subtitle">Klaim Kotak Angpao Digital Anda</p>
+
+            <!-- Area Input & Tombol -->
+            <div class="redeem-box">
+                <input type="text" id="redeem-input" placeholder="MASUKKAN KODE DI SINI" autocomplete="off">
+                <button id="btn-claim" onclick="prosesKlaim()">KLAIM HADIAH</button>
+            </div>
+
+            <!-- Tempat Menampilkan Notifikasi & Efek Hadiah -->
+            <div id="notification-message" class="message hidden"></div>
+        </div>
+
+        <!-- Footer / Aturan -->
+        <div class="game-footer">
+            <h3>Aturan Klaim:</h3>
+            <ul>
+                <li>Satu kode hanya berlaku untuk 1 akun pemain.</li>
+                <li>Pastikan koneksi internet Anda aktif dan stabil.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hubungkan ke file JavaScript yang akan kita buat di Tahap 3 -->
+    <script href="script.js"></script>
+</body>
+</html>
