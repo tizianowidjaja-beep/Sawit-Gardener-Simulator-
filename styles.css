@@ -1,0 +1,191 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b140d; /* Hijau super gelap */
+    color: #e0e7e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Wadah Utama Game (Mirip Layar HP/Tablet) */
+.game-container {
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(145deg, #112214, #0d1a10);
+    border: 2px solid #00ff66; /* Neon Green Border */
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Atas / Header */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-back {
+    background: none;
+    border: 1px solid #527853;
+    color: #a3b8a4;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.btn-back:hover {
+    border-color: #00ff66;
+    color: #00ff66;
+}
+
+.eco-score {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff66;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+}
+
+/* Konten Utama */
+.main-content {
+    text-align: center;
+}
+
+.game-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin-bottom: 5px;
+}
+
+.game-subtitle {
+    font-size: 13px;
+    color: #8da390;
+    margin-bottom: 35px;
+}
+
+/* Kotak Input & Tombol */
+.redeem-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#redeem-input {
+    width: 100%;
+    background-color: #070d08;
+    border: 1px solid #385e3c;
+    border-radius: 12px;
+    padding: 15px;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#redeem-input:focus {
+    border-color: #00ff66;
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
+}
+
+#redeem-input::placeholder {
+    letter-spacing: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4c664f;
+}
+
+#btn-claim {
+    background: linear-gradient(90deg, #00cc52, #00ff66);
+    color: #050a06;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.3s;
+}
+
+#btn-claim:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.5);
+}
+
+#btn-claim:active {
+    transform: scale(0.97);
+}
+
+/* Notifikasi Pesan */
+.message {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.message.success {
+    background-color: rgba(0, 255, 102, 0.1);
+    border: 1px solid #00ff66;
+    color: #66ff99;
+}
+
+.message.error {
+    background-color: rgba(255, 51, 51, 0.1);
+    border: 1px solid #ff3333;
+    color: #ff6666;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Bawah / Aturan */
+.game-footer {
+    border-top: 1px dashed #27422b;
+    padding-top: 20px;
+}
+
+.game-footer h3 {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.game-footer ul {
+    list-style-position: inside;
+    font-size: 12px;
+    color: #7b947d;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Animasi Masuk */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
